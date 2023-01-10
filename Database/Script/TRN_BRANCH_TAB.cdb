@@ -1,0 +1,26 @@
+create table TRN_BRANCH_TAB(
+       BranchId varchar(20),
+       BranchName varchar(20),
+       AddressDetails varchar(50),
+       BranchManager varchar(20),
+       TotalCapacity int,
+       RegistrationNo int,
+       
+       constraint PK_BRANCH primary key(BranchId),
+       constraint FK_BRANCH FOREIGN key (RegistrationNo) references TRN_COMPANY_TAB(RegistrationNo)
+);
+
+  
+  alter table TRN_BRANCH_TAB
+  drop constraint PK_BRANCH
+  
+  alter table TRN_BRANCH_TAB
+  add BranchId varchar(20)
+  
+  alter table TRN_BRANCH_TAB
+  add constraint PK_BRANCH primary key(BranchId)
+  
+  select*
+  from TRN_BRANCH_TAB
+  
+  drop table TRN_BRANCH_TAB

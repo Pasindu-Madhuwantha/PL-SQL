@@ -1,0 +1,17 @@
+
+create table TRN_STOCK_TAB(
+       StockId varchar(20),
+       BranchId varchar(20),
+       ItemId varchar(10),
+       StoredQty int,
+       ScrappedQty int,
+       ContainerId varchar(10),
+       
+       constraint PK_STOCK primary key(StockId),
+       constraint FK_STOCK_1 foreign key(BranchId) references TRN_BRANCH_TAB(BranchId),
+       constraint FK_STOCK_2 foreign key(ItemId) references TRN_ITEM_TAB(ItemId),
+       constraint FK_STOCK_3 foreign key(ContainerId) references TRN_CONTAINER_TAB(ContainerId)
+)
+
+  alter table TRN_stock_TAB
+  drop constraint fK_stock_1

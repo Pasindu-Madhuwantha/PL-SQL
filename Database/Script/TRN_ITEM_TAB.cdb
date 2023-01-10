@@ -1,0 +1,7 @@
+
+create table TRN_ITEM_TAB(
+       ItemId varchar(10),
+       Name varchar(20),
+       constraint PK_ITEM primary key(ItemId)
+       
+)

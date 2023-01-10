@@ -1,0 +1,4 @@
+insert into  TRN_BRANCH_TAB values('001KD','Kandy','No.34,Kandy Road,Gampola','Pasindu',1200,001)
+insert into  TRN_BRANCH_TAB values('002CD','Colombo','No.34,Colombo Road','Pasindu',1200,001)
+insert into  TRN_BRANCH_TAB values('002RD','Rathnapura','No.34,Colombo Road','Pasindu',1200,002)
+insert into  TRN_BRANCH_TAB values('002DD','Dambulla','No.34,Colombo Road','Pasindu',1200,002)

@@ -1,0 +1,10 @@
+create table TRN_COMPANY_TAB(
+       RegistrationNo int not null,
+       CompanyName varchar(20),
+       Address varchar(20),
+       
+       constraint PK_COMPANY primary key(RegistrationNo)
+       
+);
+
+
