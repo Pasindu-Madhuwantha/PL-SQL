@@ -1,3 +1,7 @@
 
 insert into  TRN_COMPANY_TAB values(001,'Change8','No.34,Manchester,Uk')
 insert into  TRN_COMPANY_TAB values(002,'Fore','No.34,Colombo,SL')
+insert into  TRN_COMPANY_TAB values(122,'Fore','No.34,Colombo,SL')
+
+select*
+from trn_company_tab

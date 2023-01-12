@@ -1,11 +1,11 @@
 
 create table TRN_STOCK_TAB(
-       StockId varchar(20),
-       BranchId varchar(20),
-       ItemId varchar(10),
+       StockId number,
+       BranchId varchar2(20),
+       ItemId varchar2(10),
        StoredQty int,
        ScrappedQty int,
-       ContainerId varchar(10),
+       ContainerId varchar2(10),
        
        constraint PK_STOCK primary key(StockId),
        constraint FK_STOCK_1 foreign key(BranchId) references TRN_BRANCH_TAB(BranchId),

@@ -4,10 +4,10 @@ create table TRN_BRANCH_TAB(
        AddressDetails varchar(50),
        BranchManager varchar(20),
        TotalCapacity int,
-       RegistrationNo int,
+       CompanyId varchar2(10),
        
        constraint PK_BRANCH primary key(BranchId),
-       constraint FK_BRANCH FOREIGN key (RegistrationNo) references TRN_COMPANY_TAB(RegistrationNo)
+       constraint FK_BRANCH FOREIGN key (CompanyId) references TRN_COMPANY_TAB(CompanyId)
 );
 
-  
+ 

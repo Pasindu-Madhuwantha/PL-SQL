@@ -1,6 +1,6 @@
 
 create table TRN_CONTAINER_TAB(
-       ContainerId varchar2(10),
+       ContainerId varchar(10),
        Volume number(8,2),
        HoldingWeight number(8,2),
        

@@ -1,6 +1,6 @@
 
 create table TRN_STOCK_TAB(
-       StockId varchar(20),
+       StockId number,
        BranchId varchar(20),
        ItemId varchar(10),
        StoredQty int,
@@ -13,5 +13,3 @@ create table TRN_STOCK_TAB(
        constraint FK_STOCK_3 foreign key(ContainerId) references TRN_CONTAINER_TAB(ContainerId)
 )
 
-  alter table TRN_stock_TAB
-  drop constraint fK_stock_1
